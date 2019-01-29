@@ -1,0 +1,38 @@
+<html>
+ <head>
+     <title>Program to move elements</title>
+     <script type="text/javascript">
+     
+     function move(numbers,fi,si)
+     {
+        if(fi<0){
+            fi=fi+5;
+        }
+        if(si<0){
+            si=si+5;
+        } 
+        var temp1=numbers[fi];
+        numbers[fi]=numbers[si];
+        numbers[si]=temp1;
+        return numbers;
+     }
+     
+  </script>
+</head>
+ 
+ <body>
+  <h3>Program to move elements</h3>
+    <script type="text/javascript">
+    
+    
+    console.log(move([10,20,30,40,50],0,2));
+    console.log(move([10,20,30,40,50],-1,-2));
+    
+    
+   </script>
+ </body>
+ </html>
+    
+    
+    
+   
